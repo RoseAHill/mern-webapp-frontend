@@ -1,8 +1,9 @@
 {
-  "name": "webapp-frontend",
+  "name": "mern-webapp-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "author": "Rosie A Hill",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
