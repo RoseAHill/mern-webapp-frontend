@@ -65,3 +65,5 @@ async function changePassword(changePasswordFormData) {
     throw new Error(err)
   }
 }
+
+export { signup, getUser, logout, login, changePassword }
