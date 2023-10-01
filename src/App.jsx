@@ -1,7 +1,9 @@
+import NavBar from "./components/Nav/NavBar"
+
 function App() {
   return (
-      <div className="app grid place-content-center h-screen">
-        <h1>MERN Web App</h1>
+      <div className="app grid grid-cols-4 h-screen bg-slate-700 text-slate-50">
+        <NavBar />
       </div>
   )
 }
