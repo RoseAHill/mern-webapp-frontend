@@ -16,3 +16,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+@layer base {
+  input {
+    @apply ml-4 px-2 py-1 min-w-[300px];
+  }
+}
