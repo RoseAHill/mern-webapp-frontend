@@ -9,7 +9,7 @@ const NavButtonLink = ({ text, destination = null, callback = null }) => {
           isActive ? "text-amber-200" : ""
         } to={destination}>{text}</NavLink>
       ) : (
-        <Link to="" onClick={callback}></Link>
+        <Link to="" onClick={callback}>{text}</Link>
       )}
     </div>
   );
