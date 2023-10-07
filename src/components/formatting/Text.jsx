@@ -1,18 +1,18 @@
-const Title = ({children}) => {
+const Title = ({children, tw=""}) => {
   return (
-    <div className="text-3xl font-bold">{children}</div>
+    <div className={`text-3xl font-bold ${tw}`}>{children}</div>
   )
 }
 
-const Subtitle = ({children}) => {
+const Subtitle = ({children, tw=""}) => {
   return (
-    <div className="text-lg font-medium italic">{children}</div>
+    <div className={`text-lg font-medium italic ${tw}`}>{children}</div>
   )
 }
 
-const Label = ({children}) => {
+const Label = ({children, tw=""}) => {
   return (
-    <div className="font-mono">{children}</div>
+    <div className={`font-mono ${tw}`}>{children}</div>
   )
 }
 
