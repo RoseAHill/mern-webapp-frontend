@@ -13,7 +13,7 @@ const NavBar = ({ user, handleLogout }) => {
           </text.Title>
       </div>
       <div className="nav-center w-1/3 text-center">
-        <text.Subtitle>Hello{user ? ` ${user.name}.` : "."}</text.Subtitle>
+        <text.Subtitle>Hello{user ? ` ${user.username}.` : "."}</text.Subtitle>
       </div>
       <text.Label tw="nav-right w-1/3 flex flex-row justify-end">
         {user ? (
