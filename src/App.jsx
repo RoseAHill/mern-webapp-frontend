@@ -5,6 +5,9 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import * as authService from './services/authService'
 
 // pages
+import Landing from './pages/Landing'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -28,9 +31,9 @@ function App() {
         <NavBar user={user} handleLogout={handleLogout} />
         <main className='col-start-2 col-span-1 mt-8 pt-4 flex place-content-center'>
           <Routes>
-            <Route path='/' element={<h1>Landing</h1>} />
-            <Route path='/auth/login' element={<h1>Login</h1>} />
-            <Route path='/auth/signup' element={<h1>Signup</h1>} />
+            <Route path='/' element={<Landing user={user}/>} />
+            <Route path='/auth/login' element={<Login handleAuthEvent={handleAuthEvent} />} />
+            <Route path='/auth/signup' element={<Signup handleAuthEvent={handleAuthEvent} />} />
           </Routes>
         </main>
       </div>
