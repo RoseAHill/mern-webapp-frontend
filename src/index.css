@@ -19,6 +19,6 @@
 
 @layer base {
   input {
-    @apply ml-4 px-2 py-1 min-w-[300px];
+    @apply ml-4 px-2 py-1 min-w-[300px] text-black;
   }
 }
